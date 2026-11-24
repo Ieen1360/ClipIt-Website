@@ -1,0 +1,44 @@
+# Publicação do site no GitHub Pages.
+#
+# Para ativar: mova este arquivo para .github/workflows/pages.yml na raiz do repositório e,
+# em Settings > Pages, escolha "Source: GitHub Actions".
+# Ajuste o nome do branch (main) e a pasta (website) se forem diferentes no seu repositório.
+
+name: Publicar site
+
+on:
+  push:
+    branches: [main]
+    paths: [website/**]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+
+      - name: Enviar a pasta do site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: website
+
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v4
