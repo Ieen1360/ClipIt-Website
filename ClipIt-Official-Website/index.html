@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ClipIt — Gravação de gameplay e clipes para Android</title>
+  <meta name="description" content="ClipIt grava a tela do seu Android em segundo plano e salva os últimos segundos com um toque. Biblioteca, reprodução, corte e compartilhamento no próprio aparelho.">
+  <meta name="theme-color" content="#0B0B12">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="ClipIt">
+  <meta property="og:title" content="ClipIt — Gravação de gameplay e clipes para Android">
+  <meta property="og:description" content="Guarde o momento que acabou de acontecer. Replay Buffer, botão flutuante, biblioteca e corte de clipes no seu Android.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="ClipIt, início">
+        <img src="assets/logo.svg" alt="ClipIt" width="132" height="26">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Abrir menu</span>
+        <span aria-hidden="true" class="nav-toggle-icon"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Principal">
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#demonstracao">Demonstração</a>
+        <a href="#em-breve">Em breve</a>
+        <a href="#download">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- 1. Hero -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Para Android · gravação de tela</p>
+          <h1>Guarde o momento que acabou de acontecer.</h1>
+          <p class="lead">
+            O ClipIt grava a tela do seu aparelho em segundo plano e salva os últimos segundos com um toque
+            no botão flutuante. Depois, reproduza, corte e compartilhe, tudo no próprio celular.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://www.mediafire.com/file/xmwb9gxu8md4vnp/app-debug.apk/file" target="_blank" rel="noopener">Baixar APK de teste</a>
+            <a class="btn btn-ghost" href="#funcionalidades">Ver funcionalidades</a>
+          </div>
+        </div>
+        <figure class="hero-visual">
+          <img src="assets/hero.svg" alt="" width="560" height="380">
+        </figure>
+      </div>
+    </section>
+
+    <!-- 2. Funcionalidades -->
+    <section id="funcionalidades" class="section" aria-labelledby="titulo-funcionalidades">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Funcionalidades</p>
+          <h2 id="titulo-funcionalidades">Tudo o que o ClipIt faz hoje</h2>
+          <p class="section-lead">Recursos disponíveis no app. Nada aqui depende de nuvem ou de conta.</p>
+        </header>
+
+        <ul class="feature-grid">
+          <li class="feature-card" data-reveal>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg>
+            </span>
+            <h3>Gravação de gameplay</h3>
+            <p>Grava a tela inteira com áudio interno do sistema (Android 10 ou superior) e microfone opcional. Resolução de 480p a nativa, com 30 ou 60 quadros por segundo.</p>
+          </li>
+          <li class="feature-card" data-reveal>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.3-5.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 4v4h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Replay Buffer</h3>
+            <p>Mantém a janela recente de gravação, de 15 a 120 segundos. Salve os últimos trechos quando algo acontecer, ou use a gravação contínua para registrar uma sessão inteira.</p>
+          </li>
+          <li class="feature-card" data-reveal>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="8" r="2" fill="currentColor"/></svg>
+            </span>
+            <h3>Botão flutuante</h3>
+            <p>Aparece sobre outros apps enquanto a captura está ativa. Arraste para mudar de lugar; ele encaixa na lateral da tela. Tamanho, opacidade, lado da tela e posição vertical podem ser ajustados.</p>
+          </li>
+          <li class="feature-card" data-reveal>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 10h18" stroke="currentColor" stroke-width="2"/></svg>
+            </span>
+            <h3>Biblioteca de clipes</h3>
+            <p>Os clipes ficam na pasta Movies/ClipIt, visíveis para a galeria. Dentro do app, você reproduz, renomeia, compartilha e exclui cada um.</p>
+          </li>
+          <li class="feature-card" data-reveal>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 4v16M17 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="7" y="9" width="10" height="6" rx="2" fill="currentColor" opacity=".35"/></svg>
+            </span>
+            <h3>Editor de corte</h3>
+            <p>Escolha o trecho que quer manter e exporte só esse intervalo como um novo arquivo. O editor faz corte; não há outros recursos de edição de vídeo.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. Demonstração -->
+    <section id="demonstracao" class="section section-alt" aria-labelledby="titulo-demo">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Demonstração</p>
+          <h2 id="titulo-demo">Capturas de tela</h2>
+          <p class="section-lead">Capturas de tela do aplicativo, sem alterações além da ocultação do nome da conta.</p>
+        </header>
+        <ul class="shots" data-reveal>
+          <li>
+            <figure>
+              <img src="assets/screenshots/captura.jpg" width="540" height="1170" loading="lazy" alt="Tela de captura do ClipIt: botão vermelho para iniciar, mensagem sobre a autorização do Android e a confirmação de um clipe salvo em Movies/ClipIt.">
+              <figcaption>Tela de captura, com o clipe salvo e o estado das permissões.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/screenshots/configuracoes.jpg" width="540" height="1170" loading="lazy" alt="Tela de configurações do ClipIt com seleção de resolução, quadros por segundo, orientação do vídeo e áudio interno e microfone.">
+              <figcaption>Configurações de vídeo e áudio: resolução, quadros por segundo, orientação e fontes de áudio.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/screenshots/botao-flutuante.jpg" width="540" height="1170" loading="lazy" alt="Configurações do botão flutuante: interruptor para mostrar sobre outros apps, tamanho, opacidade, lado da tela e posição vertical.">
+              <figcaption>Configurações do botão flutuante: tamanho, opacidade, lado e posição vertical.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/screenshots/biblioteca.jpg" width="540" height="1170" loading="lazy" alt="Biblioteca do ClipIt com clipes do Replay Buffer em grade, mostrando duração, resolução, data e a indicação somente local.">
+              <figcaption>Biblioteca de clipes, com duração, resolução e data de cada arquivo.</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. Em breve -->
+    <section id="em-breve" class="section" aria-labelledby="titulo-breve">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Recursos futuros</p>
+          <h2 id="titulo-breve">Ainda não disponíveis para uso público</h2>
+          <p class="section-lead">Estes recursos estão em desenvolvimento e não funcionam para o público ainda. Não há data prevista.</p>
+        </header>
+        <div class="soon-grid">
+          <article class="soon-card" data-reveal>
+            <span class="badge badge-soon">Indisponível</span>
+            <h3>Comunidade</h3>
+            <p>Feed de clipes publicados, perfis, curtidas, comentários, seguidores e denúncias. Ainda não está disponível para uso público.</p>
+          </article>
+          <article class="soon-card" data-reveal>
+            <span class="badge badge-soon">Indisponível</span>
+            <h3>Armazenamento na nuvem</h3>
+            <p>Envio de clipes para uma conta na nuvem. Ainda não está disponível para uso público e depende de configuração de serviço.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Download -->
+    <section id="download" class="section section-alt" aria-labelledby="titulo-download">
+      <div class="container">
+        <div class="download-card" data-reveal>
+          <p class="eyebrow">Download</p>
+          <h2 id="titulo-download">Baixar o ClipIt</h2>
+          <p>
+            APK de teste (depuração) do ClipIt, hospedado no MediaFire. Não é uma versão de loja.
+          </p>
+          <p class="hero-actions">
+            <a class="btn btn-primary" href="https://www.mediafire.com/file/xmwb9gxu8md4vnp/app-debug.apk/file" target="_blank" rel="noopener">Baixar APK de teste</a>
+          </p>
+          <p class="note">
+            Requisito: Android 10 ou superior. Como o APK não vem da loja, permita a instalação de fontes desconhecidas
+            nas configurações do aparelho. O MediaFire pode exibir um aviso antes do download.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">ClipIt</p>
+        <p class="muted">Versão V1</p>
+      </div>
+      <div>
+        <p class="footer-title">Informações</p>
+        <ul class="plain">
+          <li>Sem anúncios e sem bibliotecas de analytics declaradas no build.</li>
+          <li>Os clipes locais ficam no aparelho. Recursos de nuvem estão indisponíveis.</li>
+          <li>Sem licença publicada.</li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Créditos</p>
+        <ul class="plain">
+          <li>Desenvolvimento e créditos: ieen1460.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="muted">© ClipIt. Sem licença publicada: nenhum uso é concedido explicitamente.</p>
+    </div>
+  </footer>
+</body>
+</html>
